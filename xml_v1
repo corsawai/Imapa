@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<Button
+			android:id="@+id/groupChatButton"
+			android:layout_height="150dp"
+			android:text="@string/groupchat"
+			android:layout_margin="20dp"
+			android:layout_width="150dp" />
+		<Button
+			android:id="@+id/databaseButton"
+			android:layout_height="150dp"
+			android:text="Database"
+			android:layout_margin="20dp"
+			android:layout_width="150dp" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<Button
+			android:id="@+id/hallOfFameButton"
+			android:layout_height="150dp"
+			android:text="Hall Of Fame"
+			android:layout_margin="20dp"
+			android:layout_width="150dp" />
+		<Button
+			android:id="@+id/eventsButton"
+			android:layout_height="150dp"
+			android:text="Events"
+			android:layout_margin="20dp"
+			android:layout_width="150dp" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<Button
+			android:id="@+id/historyButton"
+			android:layout_height="150dp"
+			android:text="History"
+			android:layout_margin="20dp"
+			android:layout_width="150dp" />
+		<Button
+			android:id="@+id/appInfoButton"
+			android:layout_height="150dp"
+			android:text="App Info"
+			android:layout_margin="20dp"
+			android:layout_width="150dp" />
+	</TableRow>
+
+	
+</TableLayout>
