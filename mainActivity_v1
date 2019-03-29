@@ -1,0 +1,30 @@
+using Android.App;
+using Android.OS;
+using Android.Support.V7.App;
+using Android.Runtime;
+using Android.Widget;
+using System.Collections.Generic;
+using Android.Content;
+
+namespace IMAPA
+{
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    public class MainActivity : AppCompatActivity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.activity_main);
+
+            Button groupChatButton = FindViewById<Button>(Resource.Id.groupChatButton);
+
+            groupChatButton.Click += (sender, e) =>
+            {
+                //Open a new activity or screen for groupchat
+                var intentToGroupChat = new Intent(this, typeof(GroupChatActivity));
+                StartActivity(intentToGroupChat);
+            };
+        }
+    }
+}
